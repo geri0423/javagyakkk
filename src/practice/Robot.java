@@ -39,6 +39,10 @@ public class Robot {
     public double getDistance(int x, int y){
         return Math.sqrt(Math.pow(endx - x, 2) + Math.pow(endy - y, 2));
     }
+    public boolean includes(int size){
+        int bound = (size - 1) / 2;
+        return Math.abs(endx)  <= bound && Math.abs(endy)  <= bound;
+    }
 
     public int getX() {
         return x;
