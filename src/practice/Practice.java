@@ -48,6 +48,9 @@ public class Practice {
                     System.out.println(r.toString());
                 }
             }
+            
+            // 6. feladat
+            System.out.println("Még nincs kész");
         } catch (Exception e) {
         }
     }
