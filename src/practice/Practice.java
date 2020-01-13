@@ -24,6 +24,16 @@ public class Practice {
             for(Robot r : robot){
                 System.out.println(Math.round(r.getDistance(0, 0)));
             }
+            // 3.feladat
+            int max = 0;
+            for(int i = 0; i < robot.size(); i++){
+                Robot r = robot.get(i);
+                if(Math.abs(r.getEndx()) > Math.abs(robot.get(max).getEndx())) {
+                    max = i;
+                }
+            }
+            System.out.println("A legmeszebb lévő robot " +  Math.abs(robot.get(max).getEndx()) + " egységre van" );
+            
         } catch (Exception e) {
         }
     }

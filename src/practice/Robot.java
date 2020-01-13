@@ -68,5 +68,13 @@ public class Robot {
     public String toString() {
         return "Robot{" + "x=" + x + ", y=" + y + ", path=" + path + '}';
     }
+
+    public int getEndx() {
+        return endx;
+    }
+
+    public int getEndy() {
+        return endy;
+    }
     
 }
