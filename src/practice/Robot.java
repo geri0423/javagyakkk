@@ -5,6 +5,9 @@ package practice;
 public class Robot {
     private int x ;
     private int y ;
+    
+    private int endx;
+    private int endy;
     private String path;
     
     public Robot(int x, int y, String path){
@@ -29,7 +32,12 @@ public class Robot {
             }
         
         }
+        this.endx = x;
+        this.endy = y;
         System.out.println("(" + x + ", " + y + ")" );
+    }
+    public double getDistance(int x, int y){
+        return Math.sqrt(Math.pow(endx - x, 2) + Math.pow(endy - y, 2));
     }
 
     public int getX() {

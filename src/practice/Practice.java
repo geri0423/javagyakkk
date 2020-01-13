@@ -15,9 +15,14 @@ public class Practice {
                 robot.add(new Robot(0, 0, line));
             }
             
-            // első feladat
+            // 1.feladat
             for(Robot r : robot){
                 r.getEnd(0, 0);
+                
+            }
+            // 2.feladat
+            for(Robot r : robot){
+                System.out.println(Math.round(r.getDistance(0, 0)));
             }
         } catch (Exception e) {
         }
